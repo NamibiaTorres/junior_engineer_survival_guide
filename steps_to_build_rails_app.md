@@ -62,3 +62,4 @@ rails g resource book title author description:text body:text published_at:datet
 ```
 
 
+#### Namibia Torres

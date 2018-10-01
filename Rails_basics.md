@@ -204,7 +204,7 @@
 *  Rails uses the Mongoid gem to run queries against the database. The Mongo gem converts those Ruby queries to Mongo queries, and then handles the processing of the data back from whatever MongoDB returns into pure Ruby.
 
 
-###Migrations:
+### Migrations:
 
 <u>**Generating a Migrations**</u>
 
@@ -212,7 +212,7 @@
 2. ```rails g model```
 
 
-###Routing in Rails:
+### Routing in Rails:
 
 ##### <u>REST: Representational State Transfer</u>
 
@@ -226,7 +226,7 @@
 | PUT         | Completely update a resource.        | Updating your user profile on some website would typically use patch with web frameworks that support it. |
 | PATCH       | Used to partially update a resource. | An example of this would be where you are just updating the password for your user profile. |
 
-######_You'll notice that the table above mentions that most browsers only understand POST and GET. This isn't a problem for Rails. Rails actually has the HTTP method buried inside a hidden form element. When the page interacts with the server, the request is intercepted and reconstructed._
+###### _You'll notice that the table above mentions that most browsers only understand POST and GET. This isn't a problem for Rails. Rails actually has the HTTP method buried inside a hidden form element. When the page interacts with the server, the request is intercepted and reconstructed._
 
 * **Resource Routes:**
 
