@@ -30,7 +30,7 @@ Instance_double:
 
 #### <u>Unit Tests:</u>
 
-* test one functionality, something fine grain
+* Test one functionality, something fine grain
   * You can test just you controller, just the model, just the view, or even a particular method
 * There are units that you can test:
   * The units related to Setup
