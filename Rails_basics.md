@@ -6,16 +6,16 @@
 
 * In your terminal, go to the folder where the application will be stored, and then type in: ```rails new [name_of_application]```
 
-* **Removing Minitest:**If you want to use the default minitest in rails leave the above code as is, but if you want to remove minitest in order to install RSpec later use the following: ```rails new [name_of_application] -T```
+* **Removing Minitest:** If you want to use the default minitest in rails leave the above code as is, but if you want to remove minitest in order to install RSpec later use the following: ```rails new [name_of_application] -T```
 
-* **Changing Default Database**If you want to use the default database, SQLite, leave the above code as is, if you want to instead use another database, like PostgreSQL then type: ```rails new [name_of_application] -T --datsbase=postgresql```
+* **Changing Default Database** If you want to use the default database, SQLite, leave the above code as is, if you want to instead use another database, like PostgreSQL then type: ```rails new [name_of_application] -T --datsbase=postgresql```
   * If running this code doesn't install PostgreSQL, then you have to do install the PostgreSQL package using homebrew: ```brew install postgresql```
 
 * **Setting up Spec**: Start by running the command ```spec -—init``` in your terminal to allow your project to use RSpec, then add the rspec gem to your gemfile by typing: ```gem 'rspec', '~> 3.7'``` , followed by typing ```bundle install``` in your terminal once you've added the rspec gem to the Gemfile.
 
 * **What is Puma?**
 
-  * A very powerful server that automatically ships with rails 5
+  * A very powerful server that automatically ships with rails 5.
 
 * **Why would you clear your caches in git?**
 
