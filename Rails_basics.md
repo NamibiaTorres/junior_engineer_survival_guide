@@ -159,7 +159,7 @@
 
 #### Connection Pool:
 
-*  a pool of objects to share amongst the fibers or threads in your Ruby application
+*  A pool of objects to share amongst the fibers or threads in your Ruby application
 * ```connection_pool``` is a generic connection pool that youn can use with MongoDB and other databases.
 
 
@@ -199,7 +199,7 @@
 
 ##### <u>Mongo gem vs Mongoid gem:</u>
 
-* the `mongoid` gem is an object document mapper; which translates the data in a document database to be object mappable. And the `mongo` gem is a Ruby driver. So `mongoid` is needed for *any* OO programming that needs to work with a mongodb but the `mongo` gem is only for Ruby and interacts with mongodb, via mongoid.
+* The `mongoid` gem is an object document mapper; which translates the data in a document database to be object mappable. And the `mongo` gem is a Ruby driver. So `mongoid` is needed for *any* OO programming that needs to work with a mongodb but the `mongo` gem is only for Ruby and interacts with mongodb, via mongoid.
   * ```Rails -> Mongoid gem -> Mongo gem -> MongoDB```
 *  Rails uses the Mongoid gem to run queries against the database. The Mongo gem converts those Ruby queries to Mongo queries, and then handles the processing of the data back from whatever MongoDB returns into pure Ruby.
 
@@ -217,7 +217,7 @@
 ##### <u>REST: Representational State Transfer</u>
 
 * Used especially for URL routing.
-* there are several HTTP methods that are used to represent the types of actions performed by the user and/or application:
+* There are several HTTP methods that are used to represent the types of actions performed by the user and/or application:
 
 | HTTP Method | What it's used for                   | Examples:                                |
 | ----------- | ------------------------------------ | ---------------------------------------- |
