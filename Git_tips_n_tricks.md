@@ -28,10 +28,17 @@
 
 ## revert a commit
 
-##### But save the changes made to a file, just reset the staging:
+#### But save the changes made to a file, just reset the staging:
 
 ```git reset --soft HEAD~1```
 
 * reset your git repository to the stage it was in before you added that commit.
+
+#### You made a commit to master, but forgot to pull before hand. What do you do?!
+##### Revert to before the commit if it's something that you can easily add back after merging to the right repo:
+
+```git fetch origin
+   git reset --hard origin/master
+   git pull```
 
 #### Namibia Torres
