@@ -4,9 +4,9 @@
 
 * there will be options that show up with this git command.
 * this is what they mean:
-  * **s** :split [do this one first to split up the separate sections that you want to add]
-  * **y** :yes
-  * **n** :no
+  * **s**: split [do this one first to split up the separate sections that you want to add]
+  * **y**: yes
+  * **n**: no
 
 ## git checkout:
 
