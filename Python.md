@@ -117,3 +117,8 @@ print('You will be ' + str(int(myAge) + 1) + ' in a year')```
 * If `range(0, 10, 2)` is passed 3 arguments, then the first two are the start and stop of the range, while the last number is the number of times you increment, or 'increase', the numbers by until you reach the end point (the second number passed into the range function). `0, 2, 4, 6, 8`
 
 _Important:_ If you pass in a negative number as the third number passed into the `range()` function, then the range counts down from the first number to the seconf number: `range(5, -1, -1)` => `5, 4, 3, 2, 1, 0`
+
+### Importing Modules in Python:
+* Python comes with a set of modules called _standard libraries_, which contain functions that you can call to do very specific things.
+* In order to call a function, you have to call the module first, followed by `.`, and then the function,(_similar to calling a method in Ruby_):
+    * For example, to call a random integer using th random module you would write: `random.randint(0,10)` and pass in the range of integers that you want the random number to come from.
