@@ -112,7 +112,7 @@ print('You will be ' + str(int(myAge) + 1) + ' in a year')```
 * You may also use `break` and `continue` statements in `for loops`.
 
 #### Range function:
-* When you pass in a number to the `range()` function, the `for` loop will go upto, but not to, the number passed into range. So if you want to go to 100, you have to pass in 101 in the `range()` function
+* When you pass in a number to the `range()` function, the `for` loop will go upto, but not to, the number passed into range. So if you want to go to 100, or 100 times, you have to pass in 101 in the `range()` function
 * if you pass 2 artuments to the `range()` function, this specified when the range starts and when it should end, otherwise if passed in one number, the range starts at 0 and goes up to that number.
 * If `range(0, 10, 2)` is passed 3 arguments, then the first two are the start and stop of the range, while the last number is the number of times you increment, or 'increase', the numbers by until you reach the end point (the second number passed into the range function). `0, 2, 4, 6, 8`
 
