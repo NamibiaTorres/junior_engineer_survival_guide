@@ -96,3 +96,16 @@ print('You will be ' + str(int(myAge) + 1) + ' in a year')```
   * a `while` clause (that is indented on the next line following the `while` statement)
 
 * Code in a `while` clause will continue to run unless the statement is `False`
+
+##### Break Statement:
+  * A way to end a `while loop`, but it doesn't check the execution of the statement, instead it just jumps to the end of the loop.
+
+##### Continue Statement:
+ * The execution jumps to the spart of the loop and doesn't execute code after it.
+
+##### How are while and if statements different?
+* At the end of an `if` block, the program ends
+* At the end of a `while` block, the program goes back to the beginning and executes the code, until the false condition is met, then the program ends
+
+#### FOR Loops:
+
