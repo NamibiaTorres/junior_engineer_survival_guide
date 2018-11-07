@@ -120,5 +120,18 @@ _Important:_ If you pass in a negative number as the third number passed into th
 
 ### Importing Modules in Python:
 * Python comes with a set of modules called _standard libraries_, which contain functions that you can call to do very specific things.
+
+#### What to know about importing modules:
+* You can import more than one module at a time:
+  ```import random, sys, math, os```
 * In order to call a function, you have to call the module first, followed by `.`, and then the function,(_similar to calling a method in Ruby_):
     * For example, to call a random integer using th random module you would write: `random.randint(0,10)` and pass in the range of integers that you want the random number to come from.
+* You can import Third Party modules using the `pip` command in the command line (`pip3` for OSX)
+    * For more information on how to use pip to download 3rd part modules: [Follow this link](https://www.youtube.com/watch?v=xJLj6fWfw6k&feature=youtu.be)
+
+#### Standard Libraries to know:
+* Sys Module
+    * `sys.exit()` function immediately quits your program
+* Random Module
+    * allows you to select random numbers or a range of random numbers.
+
