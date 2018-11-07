@@ -1,5 +1,5 @@
 ## Beginer's Guide to Python
-
+_Notes from "Automate the Boring Stuff with Python" by Al Sweigart_
 ### Common Data Types
 #### 1) Integers
 #### 2) Floats (aka. Float-point numbers)
@@ -108,4 +108,4 @@ print('You will be ' + str(int(myAge) + 1) + ' in a year')```
 * At the end of a `while` block, the program goes back to the beginning and executes the code, until the false condition is met, then the program ends
 
 #### FOR Loops:
-
+* Unlike `while` loops, which iterate under a certain condition, `for` loops will iterate a specified number of times.
