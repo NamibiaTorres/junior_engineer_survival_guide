@@ -154,4 +154,18 @@ _Important:_ If you pass in a negative number as the third number passed into th
 
 
 ### Return Values & Return Statements:
+#### Scopes: Global & Local
+* __Scope__= a container of variables
+* __Global Scope__= ('Global') Variables located outside of a function
+* __Local Scope__= ('Local') Variables that exist inside of a function, and can only be used within that function. The local variable can have the same name as another variable as long as they are used in different scopes (or different functions).
 
+### Handling Errors:
+#### Try and Except statements:
+* When you have something that causes an error, you can use a `try` statement, to run your code and then an `except` statement to tell your program to pause from running your code if a specific error comes up, and then keep going after it skips over the code that would cause an error.
+
+    ``` def divide50by(denominator):
+            try:
+                return 50 / denominator
+            except ZeroDivisionError:
+                print('Dividing by 0 is undefined')
+    ```
