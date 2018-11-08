@@ -249,3 +249,9 @@ Table 4-1 from [Automate the Boring Stuff with Python](https://automatetheboring
 * Many of the things that you can do to strings, you can do to lists.
 
 
+### Methods:
+* You call a method on something (like a variable)
+* Example: `index()` method:
+    * spam = ['heya', 'hi', 'hello']
+    * `spam.index('hi')` => 0
+    * The above method asks to find the index of 'hi', which is 0
