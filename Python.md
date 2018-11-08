@@ -140,4 +140,18 @@ _Important:_ If you pass in a negative number as the third number passed into th
     * Something that groups code that gets executed multiple times.
 
 #### Key features of a function:
-* Functions can have a parameter (like an object in ruby), and they are passed arguments (objects in Ruby), in order to execute specific code.
+* Functions can have a parameter (like an object parameter in ruby), and they are passed arguments that become assigned to the parameters, in order to execute specific code.
+
+##### What does the built-in function `print()` evaluate to?
+* `print()` returns a value called `None`, which represents a lack of a value (the `None type` data type)
+* It does print out the `None` value when you call print.
+* When you pass `print(anArgument)` an argument, then it passes argument and prints that out,
+* if you do not pass `print()` an argument, then the return value will be `None`.
+
+#### Keyword arguments:
+* these are usually optional arguments in functions.
+* the `print()` function has the `sep` (separate the black spaces with something, `sep = 123` => `something123is123separated`) and the `end` keyword argument.
+
+
+### Return Values & Return Statements:
+
