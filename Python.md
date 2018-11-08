@@ -170,7 +170,7 @@ _Important:_ If you pass in a negative number as the third number passed into th
                 print('Dividing by 0 is undefined')
     ```
 
-### Slice
+### Lists: Slice, Del
 * `slice` gets several indexes from a list
 * Great way to get a list of values
 * Has two indexes inside of it, separated by a `:`
@@ -192,4 +192,16 @@ _Important:_ If you pass in a negative number as the third number passed into th
 
 * Missing last index: myList[1:]
 * Evaluates to: ['dog', 'mouse', 'bird'] => indexes starting at the first until the end of the list (this time it will include the last index)
+
+#### `del` Statement: Delete something from a list:
+* if you want to delete 'dog' from `myList`, you would do it as follows: `del myList[1]` => myList = ['cat',  'mouse', 'bird']
+* in this case we specified the index we want to delete, called `myList` again, and received a new version of the list without the index you just deleted
+
+#### `in` and `not in` Operators:
+* Example `in`: `'howdy' in ['hello', 'hi', 'howdy', 'heya']` => `True` because 'howdy' is in the list.
+* Example `not in`: `80 not in ['hello', 'hi', 'howdy', 'heya']` => `True` because 80 is not in the list.
+
+#### NOTES:
+* Many of the things that you can do to strings, you can do to lists.
+
 
