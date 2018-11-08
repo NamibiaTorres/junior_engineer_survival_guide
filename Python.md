@@ -26,7 +26,7 @@ _Notes from "Automate the Boring Stuff with Python" by Al Sweigart_
 ### Important notes about Functions:
 _There are various built in functions in Python, so it's important to understand what they can and can not do_
 
-* input() = Let's user type in an input. this function only returns a string. If you want to concatinate a number within a string, but you want the ability to change the number, you must pass the input function to an integer function, which is then passed to a string.
+* input() = Let's user type in an input. this function __only returns a string__ (aka. evaluates to a string). If you want to concatinate a number within a string, but you want the ability to change the number, you must pass the input function to an integer function, which is then passed to a string.
   EX: ```myAge = input()
 print('You will be ' + str(int(myAge) + 1) + ' in a year')```
 
