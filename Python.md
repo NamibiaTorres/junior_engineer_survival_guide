@@ -249,9 +249,35 @@ Table 4-1 from [Automate the Boring Stuff with Python](https://automatetheboring
 * Many of the things that you can do to strings, you can do to lists.
 
 
-### Methods:
+### Methods: List methods
 * You call a method on something (like a variable)
-* Example: `index()` method:
+* `index()` method:
     * spam = ['heya', 'hi', 'hello']
     * `spam.index('hi')` => 0
     * The above method asks to find the index of 'hi', which is 0
+* `append()` method:
+    * Adds a value to the end of a list.
+* `insert()` method:
+    * Adds a value at any index within a list.
+    * Example: `spam.insert(1, 'hey')` => spam = ['heya', 'hey', 'hi', 'hello']
+    * To break it down you pass an index, and the value you want to add to the list: `spam.insert(index, value)`
+* `remove()` method:
+    * removes something form a list
+    * it's different from the delete statement because it allows you to specify a value rather than an index.
+    * If the value appears multiple times in a list, only the first instance of that value will be remove.
+*  `sort()` method
+    * Will rearrange a list in order.
+    * You can pass in a keyword argument to `sort()`, such as `reverse` to sort in reverse order:
+        * `spam.sort(reverse=True)`
+    * `sort()` uses ASCII-betical order:
+        * This means upper case comes before lower case.
+        * To change the automatic ASCII-betical sorting, you can pass in a keyword argument: `spam.sort(key=str.lower)`
+        If  you have a list of ['A','Z','a', 'z'], it will now be sorted to ['A', 'a', 'Z','z'], and ignore the uppercase before all lowercase ordering of `sort()`.
+
+### Datatypes: Mutable VS IMMUTABLE:
+#### Mutable Datatypes:
+* these are datatypes that can have values added, removed, or changed
+* EXAMPLE: Lists
+
+#### Immutable Datatypes:
+* These are datatypes that __cannot__ be changed
