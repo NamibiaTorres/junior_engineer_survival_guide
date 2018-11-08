@@ -135,3 +135,9 @@ _Important:_ If you pass in a negative number as the third number passed into th
 * Random Module
     * allows you to select random numbers or a range of random numbers.
 
+### Functions
+##### What is a function?
+    * Something that groups code that gets executed multiple times.
+
+#### Key features of a function:
+* Functions can have a parameter (like an object in ruby), and they are passed arguments (objects in Ruby), in order to execute specific code.
