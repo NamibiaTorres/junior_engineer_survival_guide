@@ -161,7 +161,7 @@ _Important:_ If you pass in a negative number as the third number passed into th
 
 ### Handling Errors:
 #### Try and Except statements:
-* When you have something that causes an error, you can use a `try` statement, to run your code and then an `except` statement to tell your program to pause from running your code if a specific error comes up, and then keep going after it skips over the code that would cause an error.
+* When you have something that causes an error, you can use a `try` statement (aka. block), to run your code and then an `except` statement (aka. block) to tell your program to pause from running your code in the `try` block and run the code in the `except` block instead if a specific error comes up.
 
     ``` def divide50by(denominator):
             try:
@@ -169,3 +169,5 @@ _Important:_ If you pass in a negative number as the third number passed into th
             except ZeroDivisionError:
                 print('Dividing by 0 is undefined')
     ```
+
+
