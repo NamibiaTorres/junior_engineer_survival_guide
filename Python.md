@@ -170,4 +170,26 @@ _Important:_ If you pass in a negative number as the third number passed into th
                 print('Dividing by 0 is undefined')
     ```
 
+### Slice
+* `slice` gets several indexes from a list
+* Great way to get a list of values
+* Has two indexes inside of it, separated by a `:`
+#### How does a `slice` work?
+* List: myList = ['cat', 'dog', 'mouse', 'bird']
+* Slice: myList[1:3] => myList passed in index 1 __upto, but not including__ index 3
+* Evaluates to: ['dog', 'mouse']
+
+* You can also assign values using a slice:
+* List: myList = ['cat', 'dog', 'mouse', 'bird']
+* Slice: myList[1:3] = ['fish', lizard', 'catnip'] => replaces the indexes 1 and 2 of my list with the newest 3 values
+* Evaluates to: myList = ['cat', 'fish', lizard', 'catnip', 'bird']
+
+#### Other ways to manipulate a `slice`?
+* EXAMPLE LIST: myList = ['cat', 'dog', 'mouse', 'bird']
+* You can forgo passing in a first index and a last index:
+* Missing first index: myList[:3]
+* Evaluates to: ['cat', 'dog', 'mouse'] => all the indexes starting at 0 upt to index 3.
+
+* Missing last index: myList[1:]
+* Evaluates to: ['dog', 'mouse', 'bird'] => indexes starting at the first until the end of the list (this time it will include the last index)
 
