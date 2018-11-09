@@ -257,8 +257,8 @@ Table 4-1 from [Automate the Boring Stuff with Python](https://automatetheboring
 * You call a method on something (like a variable)
 * `index()` method:
     * spam = ['heya', 'hi', 'hello']
-    * `spam.index('hi')` => 0
-    * The above method asks to find the index of 'hi', which is 0
+    * `spam.index('hi')` => 1
+    * The above method asks to find the index of 'hi', which is 1
 * `append()` method:
     * Adds a value to the end of a list.
 * `insert()` method:
@@ -267,7 +267,7 @@ Table 4-1 from [Automate the Boring Stuff with Python](https://automatetheboring
     * To break it down you pass an index, and the value you want to add to the list: `spam.insert(index, value)`
 * `remove()` method:
     * removes something form a list
-    * it's different from the delete statement because it allows you to specify a value rather than an index.
+    * it's different from the `del` delete statement because it allows you to specify a value rather than an index.
     * If the value appears multiple times in a list, only the first instance of that value will be remove.
 *  `sort()` method
     * Will rearrange a list in order.
