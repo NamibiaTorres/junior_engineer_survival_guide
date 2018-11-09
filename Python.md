@@ -134,6 +134,10 @@ _Important:_ If you pass in a negative number as the third number passed into th
     * `sys.exit()` function immediately quits your program
 * Random Module
     * allows you to select random numbers or a range of random numbers.
+* Copy module
+    * `copy()` can be used to copy a reference AND make a duplicate copy of a mutable value (e.g. list or dictionary).
+    * provide the `copy()` and `deepcopy()` functions
+    * `deepcopy()` is used for lists within lists, "If the list you need to copy contains lists, then use the copy.deepcopy() function instead of copy.copy(). The deepcopy() function will copy these inner lists as well." (from _Automate the Boring Stuff with Python_).
 
 ### Functions
 ##### What is a function?
@@ -274,10 +278,17 @@ Table 4-1 from [Automate the Boring Stuff with Python](https://automatetheboring
         * To change the automatic ASCII-betical sorting, you can pass in a keyword argument: `spam.sort(key=str.lower)`
         If  you have a list of ['A','Z','a', 'z'], it will now be sorted to ['A', 'a', 'Z','z'], and ignore the uppercase before all lowercase ordering of `sort()`.
 
+* "Variables do not store list values directly; they store references to lists. This is an important distinction when copying variables or passing lists as arguments in function calls. Because the value that is being copied is the list reference, be aware that any changes you make to the list might impact another variable in your program. You can use copy() or deepcopy() if you want to make changes to a list in one variable without modifying the original list." (from _Automate the Boring Stuff with Python_).
+
 ### Datatypes: Mutable VS IMMUTABLE:
 #### Mutable Datatypes:
 * these are datatypes that can have values added, removed, or changed
 * EXAMPLE: Lists
+* While using rewriting the values of a list will modify the list (and replace it with a new list), if you want to change the values of a list in place, it's best to use the `del` statment and the `append()` method to change the value of a list in place.
 
 #### Immutable Datatypes:
 * These are datatypes that __cannot__ be changed
+* EXAMPLE: Strings, Tuple (an immutable form of Lists)
+    * you can not change values of indexes in a string, like you can with a mutble list
+    * The ONLY way to mutate a string is to use `slicing` and `concatenation` to create a new string.
+
