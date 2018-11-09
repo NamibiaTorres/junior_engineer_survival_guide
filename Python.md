@@ -281,10 +281,18 @@ Table 4-1 from [Automate the Boring Stuff with Python](https://automatetheboring
 * "Variables do not store list values directly; they store references to lists. This is an important distinction when copying variables or passing lists as arguments in function calls. Because the value that is being copied is the list reference, be aware that any changes you make to the list might impact another variable in your program. You can use copy() or deepcopy() if you want to make changes to a list in one variable without modifying the original list." (from _Automate the Boring Stuff with Python_).
 
 ### Datatypes: Mutable VS IMMUTABLE:
-#### Mutable Datatypes:
+#### Mutable Datatypes: Lists, Dictionaries
 * these are datatypes that can have values added, removed, or changed
-* EXAMPLE: Lists
 * While using rewriting the values of a list will modify the list (and replace it with a new list), if you want to change the values of a list in place, it's best to use the `del` statment and the `append()` method to change the value of a list in place.
+
+##### Dictionaries:
+* Aka. Hash map, it is a collection of many values
+* Indexes are called `keys`, and they have values, forming `key-value pairs`.
+* To access a key in a hash map, call the name of the hash map and provide the name of the index, you can do this instead of the index number: `hashMapName[keyName]`
+* Dictionaries are not ordered, unlike lists,
+
+
+
 
 #### Immutable Datatypes:
 * These are datatypes that __cannot__ be changed
