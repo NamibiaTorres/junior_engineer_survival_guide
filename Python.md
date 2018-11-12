@@ -283,7 +283,7 @@ Table 4-1 from [Automate the Boring Stuff with Python](https://automatetheboring
 ### Datatypes: Mutable VS IMMUTABLE:
 #### Mutable Datatypes: Lists, Dictionaries
 * these are datatypes that can have values added, removed, or changed
-* While using rewriting the values of a list will modify the list (and replace it with a new list), if you want to change the values of a list in place, it's best to use the `del` statment and the `append()` method to change the value of a list in place.
+* "While using rewriting the values of a list will modify the list (and replace it with a new list), if you want to change the values of a list in place, it's best to use the `del` statment and the `append()` method to change the value of a list in place." (from _Automating the Boring Stuff with Python_)
 
 ##### Dictionaries:
 * Aka. Hash map, it is a collection of many values
@@ -291,7 +291,24 @@ Table 4-1 from [Automate the Boring Stuff with Python](https://automatetheboring
 * To access a key in a hash map, call the name of the hash map and provide the name of the index, you can do this instead of the index number: `hashMapName[keyName]`
 * Dictionaries are not ordered, unlike lists,
 
+##### Dictionary Methods: `keys()`, `vales()`, `items()`, `get()`
+* These first 3 methods return values that are similar to `lists`
+* The values they return, however, are immutable.
+* `items()` method returns `tuples` of the `key` and `value`
+* "Using the keys(), values(), and items() methods, a for loop can iterate over the keys, values, or key-value pairs in a dictionary, respectively." ((from _Automating the Boring Stuff with Python_))
+* IF YOU WANT TO MAKE THE RETURNS MODIFIABLE, you can always pass them through a list to get list-like returns:
+` >>> spam = {'color': 'red', 'age': 42}
+    >>> spam.keys()
+    dict_keys(['color', 'age']) # return value
+    >>> list(spam.keys())
+    ['color', 'age'] # return value `
 
+* `get()` method:
+    * "dictionaries have a get() method that takes two arguments: the key of the value to retrieve and a fallback value to return if that key does not exist." (from _Automating the Boring Stuff with Python_)
+
+* `setdefault()` method allows you to set a value in a dictionary (in one line of code) for a certain key only if that key does not already have a value:
+ ` dog = {'name': 'Rover', 'age': 2}
+   dog.setdefault('color', 'black')`
 
 
 #### Immutable Datatypes:
