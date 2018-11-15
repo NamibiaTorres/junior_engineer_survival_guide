@@ -317,3 +317,24 @@ Table 4-1 from [Automate the Boring Stuff with Python](https://automatetheboring
     * you can not change values of indexes in a string, like you can with a mutble list
     * The ONLY way to mutate a string is to use `slicing` and `concatenation` to create a new string.
 
+### Strings
+#### Escape Characters
+* Escape character `\` (a backslash + another character) allows you to use characters you wouldn't normally use in a string.
+* Escape character table
+|Character| Meaning|
+|---|---|
+|\"|Double quote|
+|\'| Single quote|
+|\n| New line|
+|\t| Tab|
+|\\| Backslash|
+
+#### Raw strings:
+* Put an 'r' before a quote and it will ignore all escape character, printing everying that is within the string:
+`r"This is cool\n Don't you think?"` => `This is cool\n Don't you think?`
+
+#### Multi-line strings:
+* Forget the `\n`, you can just interpret a strong with multiple lines as follows"
+`'''This is cool,
+    Don't you think?'''`
+
