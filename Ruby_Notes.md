@@ -4,7 +4,7 @@
 
 #### Model:
 
-* Contain the *domain logic* if an application, which tell you how records in database are retrieved, validated, or manipulated
+* Contain the *domain logic* of an application, which tell you how records in database are retrieved, validated, or manipulated
 
 
 
@@ -41,6 +41,9 @@
 
 * Where you put the classes of the application that deal with sending emails.
 
+### REST
+
+* REST = Representational State Transfer. It's the convention for routing, how requests are routed (e.g. how urls map to the controller, where a form submits data)
 
 
 ### Scaffolding & Migrations
