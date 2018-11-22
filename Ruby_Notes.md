@@ -53,5 +53,12 @@
 * Scaffolds are generated to provide temporary structures to get you started on an application
 * The ```scaffold``` command generates your model, views, and controller, and the tests
 
+#### Migrations:
+* Ruby classes that define a `change` method
+* They inherit from ActiveRecord::Migration
+
+
+### Parameters:
+* something_`params` is a _strong parameters_ method called `params`, that returns parameters sent from a form or something in your app, in a hash-like object
 
 #### Namibia Torres
