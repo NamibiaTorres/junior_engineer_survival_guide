@@ -128,6 +128,8 @@ _Important:_ If you pass in a negative number as the third number passed into th
     * For example, to call a random integer using th random module you would write: `random.randint(0,10)` and pass in the range of integers that you want the random number to come from.
 * You can import Third Party modules using the `pip` command in the command line (`pip3` for OSX)
     * For more information on how to use pip to download 3rd part modules: [Follow this link](https://www.youtube.com/watch?v=xJLj6fWfw6k&feature=youtu.be)
+* If you just type `from [module] import *` you will import everything from that module so you don't need to write what the module is before using one of its built in functions:
+`random.randint(1,10)` would just be `randint(1,10)`
 
 #### Standard Libraries to know:
 * Sys Module
