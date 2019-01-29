@@ -380,4 +380,23 @@ __equivalent to:__
 def hello():
     return 'Hello'`
 
+__Here is another example of a decorator function:__
+
+`def timeme(func):
+    def inner():
+        start_time = time.time()
+        func()
+        end_time = time.time()
+        run_time = start_time - end_time
+        print(run_time)
+    return inner
+
+    @timeme
+        def slow():
+            print('Starting')
+            time.sleep(1)
+            print('Finished')
+
+    timeme(slow)`
+
 
