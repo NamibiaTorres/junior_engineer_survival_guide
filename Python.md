@@ -354,14 +354,15 @@ Table 4-1 from [Automate the Boring Stuff with Python](https://automatetheboring
 
 ### Decorators:
 `def make_bold(func):
-    def inner():
+    def inner(*args):
         return '<b>' + func() + '<b>'
     return inner`
 * A decorator function takes a function as a parameter and returns a different function.
 * What it returns will be somewhat related to the first one.
 * Pattern:
 1. a function is def and takes in another function
-2. an inner() function is defined
+2. an `inner(*args)` function is defined (`*args` means 'with any number of arguments', which is important because the function you pass in could have arguments and you want`inner()` to be used as a general function)
+
 3. then a `func` is returned
 4. In the same line as the inner() function definition, return `inner` (without the `()`)
 
