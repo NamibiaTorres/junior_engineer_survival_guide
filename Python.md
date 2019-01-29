@@ -217,12 +217,23 @@ _Important:_ If you pass in a negative number as the third number passed into th
     * Evaluates to:
     ```[0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98]```
 
-* Example3: List all the the letts of the word "cat" into separate strings:
+* Example3: List all the the letters of the word "cat" into separate strings:
     ```list('cat')```
     * Evaluates to:
     ```['c', 'a', 't']```
 
-#### Multiple Assignments:
+### Sequence Data Types: Tuples, Lists, Range
+#### Tuples:
+* They are a number of values that are separated by a comman: `t = 12345, 54321, 'hello!'`
+* They can be nested
+* They are immutible
+* They can have multiple objects:
+    * ` tup = [(1,2,3), ('hey', 'hello', 'hi')]`
+
+### Set
+* unordered collection with no repeated items.
+
+### Multiple Assignments:
 ##### Swap operations:
 * ```a = 'AAA'
      b = 'BBB'
@@ -246,7 +257,7 @@ Table 4-1 from [Automate the Boring Stuff with Python](https://automatetheboring
 |spam /= 1| spam = spam / 1|
 |spam %= 1| spam = spam % 1|
 
-##### Modulus operator
+### Modulus operator
 * Used to find the remainder of a diveded number, or to find even or odd numbers:
     `num % 2 == 0` => even number
     `num % 2 == 1` => odd number
@@ -339,4 +350,33 @@ Table 4-1 from [Automate the Boring Stuff with Python](https://automatetheboring
 * Forget the `\n`, you can just interpret a strong with multiple lines as follows"
 `'''This is cool,
     Don't you think?'''`
+
+
+### Decorators:
+`def make_bold(func):
+    def inner():
+        return '<b>' + func() + '<b>'
+    return inner`
+* A decorator function takes a function as a parameter and returns a different function.
+* What it returns will be somewhat related to the first one.
+* Pattern:
+1. a function is def and takes in another function
+2. an inner() function is defined
+3. then a `func` is returned
+4. In the same line as the inner() function definition, return `inner` (without the `()`)
+
+`hello_bold = make_bold(hello)`
+ returns `'<b>Hello!<b>'`
+
+#### Syntactic Sugar example:
+`def hello():
+    return 'Hello!'
+hello = make_bold(hello)`
+
+__equivalent to:__
+
+`@make_bold
+def hello():
+    return 'Hello'`
+
 
