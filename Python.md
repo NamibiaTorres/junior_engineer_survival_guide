@@ -399,4 +399,9 @@ __Here is another example of a decorator function:__
 
     timeme(slow)`
 
+#### List and Set comprehensions:
+* `perms =list(permutations(letters))`
+* `candidates = {''.join(perm) for perm in perms}`
 
+#### Intersections:
+`candidates.intersection(wordset)` == `candidates & wordset`
