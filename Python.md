@@ -376,13 +376,15 @@ hello = make_bold(hello)`
 
 __equivalent to:__
 
-`@make_bold
+```python
+@make_bold
 def hello():
-    return 'Hello'`
+    return 'Hello'```
 
 __Here is another example of a decorator function:__
 
-`def timeme(func):
+```python
+def timeme(func):
     def inner():
         start_time = time.time()
         func()
@@ -397,7 +399,8 @@ __Here is another example of a decorator function:__
             time.sleep(1)
             print('Finished')
 
-    timeme(slow)`
+    timeme(slow)
+    ```
 
 #### List and Set comprehensions:
 * `perms =list(permutations(letters))`
@@ -405,3 +408,62 @@ __Here is another example of a decorator function:__
 
 #### Intersections:
 `candidates.intersection(wordset)` == `candidates & wordset`
+
+## Classes:
+```python
+class BankAccount():
+    def __init__(account, balance=10000000):
+        account.balance = balance
+
+    savings = BankAccount()
+    checking = BankAccount()
+
+    type(savings)
+
+    def withdraw(account, amount):
+        account.balance -= amount
+
+    withdraw(savings, 100)
+
+    savings.balance
+
+BankAccount.withdraw(savings, 5000)
+```
+
+### Imports:
+#### Method 1:
+```python
+import pandas
+
+pandas.DataFrame
+```
+
+#### Method 2: Give an alias
+```python
+import pandas as pd
+
+pd.DataFrame
+```
+#### Method 3: From...import:
+```python
+from flask import Flask
+```
+* If you use the work `from` instead of import, you can access something directly
+
+#### Method 4: Combining 2 and 3
+```python
+from matplotlib.pyplot import plot as p
+```
+
+#### Methods 5: import with a *
+```python
+from numpy import *
+
+cosine_of = cos(x)
+```
+* Without the `*` you don't need to add the module prefix `np` before `cos(x)`. However, for a large file, with multiple imports, it will be difficult to know which package each method came from.
+* this method of importing is not recommended
+
+### Memory efficiency of different import methods
+* all import methods have the same memory costs, because python still has to run the entire file and maintains a cache of loaded modules in memory. The cache is called sys.modules
+

@@ -19,3 +19,22 @@ This command: `db = SQLAlchemy`,  _hooks the database to our app_
   `export FLASK_ENV=development`
   STEP 3: next terminal command:
   `flask run`
+
+
+### HTTP Status Codes:
+* 1xx(Informational)
+* 2xx(SUccessful)
+* 3xx(Redirection)
+* 4xx(Client)
+* 5xx(Server)
+
+### OpenAPI specs:
+* https://editor.swagger.io/
+* openapi - Required
+* info -Required
+* paths -Required
+* servers
+* components
+* security
+* tags
+* externalDocs
