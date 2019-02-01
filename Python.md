@@ -467,3 +467,17 @@ cosine_of = cos(x)
 ### Memory efficiency of different import methods
 * all import methods have the same memory costs, because python still has to run the entire file and maintains a cache of loaded modules in memory. The cache is called sys.modules
 
+
+### Chunks:
+* Chunks is an iterater
+```python
+import pandas as pd
+
+chunks = pd.read_csv('huge_file.csv', chunksize=10**6)
+
+for chunk in chunks:
+    process_chunk_here(chunk)
+```
+
+### packages:
+* packages = a folder/directory of modules
