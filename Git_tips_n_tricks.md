@@ -37,8 +37,15 @@
 #### You made a commit to master, but forgot to pull before hand. What do you do?!
 ##### Revert to before the commit if it's something that you can easily add back after merging to the right repo:
 
-```git fetch origin
+`git fetch origin
    git reset --hard origin/master
-   git pull```
+   git pull`
+
+## find lost commits:
+Oh no! I know I committed but it got lost in the ether
+1. `git fsck --lost-found` to find lost commits and return see all of the lost commit shas
+2. `git show <commit sha from the list of shas>` to see what was in that commit
+3. `git merge <commit sha>` to merge that commit back into your branch
+
 
 #### Namibia Torres

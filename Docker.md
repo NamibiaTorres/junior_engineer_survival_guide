@@ -32,4 +32,5 @@
   * this clones your image and puts in a container
 * Run an image:
   `docker run -t [name of image]`
-
+* To list all of your docker containers:
+`docker ps -a`
