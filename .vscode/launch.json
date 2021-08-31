@@ -172,7 +172,7 @@
       "type": "python",
       "request": "launch",
       "stopOnEntry": true,
-      "pythonPath": "${config:python.pythonPath}",
+      "python": "${command:python.interpreterPath}",
       "cwd": "${workspaceRoot}",
       "env": {},
       "envFile": "${workspaceRoot}/.env",
@@ -191,7 +191,7 @@
       "type": "python",
       "request": "launch",
       "stopOnEntry": true,
-      "pythonPath": "${config:python.pythonPath}",
+      "python": "${command:python.interpreterPath}",
       "program": "${workspaceRoot}/console.py",
       "cwd": "${workspaceRoot}",
       "args": [
