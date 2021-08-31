@@ -102,4 +102,10 @@ Array = a fixed length list of things
 
 #### Slice
 
-Slice = An array that can grow or shrink (definition from The Complete Developer's Guide (Goland) by Stephen Grider)
+Slice = Very similar to an array, but everything inside of it corresponds to an ascii character code. It can grow or shrink, just like an array can.
+
+Byte slice = a computer friendly representation of a string. The letters in a string correspond to numbers, so that the computer can read it and then throw back numbers that are compiled into letters, forming words, that we understand. 
+
+### Type conversion
+
+**Type conversion** = with type conversion we take one type and turn it into another type.
