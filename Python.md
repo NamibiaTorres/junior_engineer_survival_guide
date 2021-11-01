@@ -417,7 +417,7 @@ Example List: x = ["apple", "orange", "pear"]
   |\'| Single quote|
   |\n| New line|
   |\t| Tab|
-  |\\| Backslash|
+  |\\ | Backslash|
 
 #### Raw strings:
 
@@ -452,12 +452,13 @@ returns `'<b>Hello!<b>'`
 
 **equivalent to:**
 
-````python
+```python
 @make_bold
 def hello():
-    return 'Hello'```
+    return 'Hello'
+```
 
-__Here is another example of a decorator function:__
+**Here is another example of a decorator function:**
 
 ```python
 def timeme(func):
@@ -476,37 +477,18 @@ def timeme(func):
             print('Finished')
 
     timeme(slow)
-    ```
+```
 
 #### List and Set comprehensions:
-* `perms =list(permutations(letters))`
-* `candidates = {''.join(perm) for perm in perms}`
+
+- `perms =list(permutations(letters))`
+- `candidates = {''.join(perm) for perm in perms}`
 
 #### Intersections:
+
 `candidates.intersection(wordset)` == `candidates & wordset`
 
-## Classes:
-```python
-class BankAccount():
-    def __init__(account, balance=10000000):
-        account.balance = balance
-
-    savings = BankAccount()
-    checking = BankAccount()
-
-    type(savings)
-
-    def withdraw(account, amount):
-        account.balance -= amount
-
-    withdraw(savings, 100)
-
-    savings.balance
-
-BankAccount.withdraw(savings, 5000)
-````
-
-### Imports:
+## Imports:
 
 #### Method 1:
 
@@ -566,6 +548,112 @@ for chunk in chunks:
     process_chunk_here(chunk)
 ```
 
-### packages:
+### Packages:
 
 - packages = a folder/directory of modules
+
+### Modules:
+
+- Modules are a files that organize code logically so that it can be reused somewhere else.
+- Modules were created to organize larger projects, to make the project more manageable.
+- Modules can contain Pythoin source code, and sometimes thye have compiled C object files.
+- The following idiom is included (not always though) with programs that will be imported as modules:
+
+```python
+if __name__ == '__main__':
+    print(linecount('your_program.py'))
+```
+
+#### What does it all mean though?
+
+- When the program starts `__name__` is set. The value `__main__` indicates that the program si running as a script.
+- This idiom allows the program to skip running the test code, when the module is imported.
+
+#### Benefits of modules:
+
+- Some of the benefit of using modules is that you can name functions the same thing, but with different solutions, in 2 different modules, and use these functions the way they are intended in the file importing those modules. Therefore, modules resolve naming clashes.
+- Python also uses `namespace`, which a dictionary of identifiers available to a function, block, module, and class; and modules have their own `namespace`
+
+#### Import Statment:
+
+## Python Namespaces:
+
+Namespace is the way that python keeps tracks of active variables or identifiers and what each is pointing to in memory.
+
+### Three namespaces: _built-in_, _global_, _local_
+
+- _built-in_ namspace maps to built-in functions
+- _global_ namespace maps to module functions and module variables
+- _local_ namespace maps to local functions and local variables.
+
+When looking for an identifier, Python starts by looking at the local namespace first, then the global namespace, and finally the local namespace. You get a `NameError` error when a namespace doesn't match your identifier.
+
+## Classes and Object Oriented Programming
+
+### Classes:
+
+- Class = a datatype that is defined with a class statment (body):
+
+```python
+class newClass:
+    class body
+```
+
+- body = a list of `statments`, that are usually made up of function definitions, variables, and sometimes modules or other classes
+
+```python
+class BankAccount():
+    def __init__(account, balance=10000000):
+        account.balance = balance
+
+    savings = BankAccount()
+    checking = BankAccount()
+
+    type(savings)
+
+    def withdraw(account, amount):
+        account.balance -= amount
+
+    withdraw(savings, 100)
+
+    savings.balance
+
+BankAccount.withdraw(savings, 5000)
+```
+
+#### Class Instances:
+
+In Python, `class instances` can be used prior to being defined. This means you can use the class instance, define a variable within the class later in your codebase and then use that variable in your code:
+
+```python
+class BankAccount():
+  pass
+
+my_account = BankAccount():
+my_account.month_balance = 10000
+year_balance =  my_account.month_balance * 12
+print(year_balance)
+```
+
+#### `__init__` initialization method:
+
+Another way to initialize things is by using the `__init__` initialization method in the body of a class. This is a function that takes in a argument called `self`, and sometimes other arguments with self always being the first argument, and it runs every time an instance of the class is created.
+
+```python
+class BankAccount():
+  def __init__(self):
+    self.month_balance = 100
+
+my_account = BankAccount():
+my_account.month_balance = 10000
+year_balance =  my_account.month_balance * 12
+print(year_balance)
+```
+
+An `instance variable` like the one shown in the example above (`self.month_balance`), is a hallmakr of Object Oriented Programming (OPP).
+
+In Python, unlike some other languages, an instance variable has to be explicitly called out with `self.varable_name` otherwise it would be indestinguishable from a local variable called `variable_name`.
+
+#### `__new__` method:
+
+The `__new__` method acts like a constructor, because it preapares a new object for use by taking in arguments that can be set later on. In python the `__new__` method is called when an object is created and it returns an object that is not initialized. Some exceptions for overriding an existing `__new__` method is by using a metaclass that modifies an object during its creation or even subclassing an immutable type (e.g. ty=uple, float, strings)
