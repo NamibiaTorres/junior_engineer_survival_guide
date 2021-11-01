@@ -657,3 +657,17 @@ In Python, unlike some other languages, an instance variable has to be explicitl
 #### `__new__` method:
 
 The `__new__` method acts like a constructor, because it preapares a new object for use by taking in arguments that can be set later on. In python the `__new__` method is called when an object is created and it returns an object that is not initialized. Some exceptions for overriding an existing `__new__` method is by using a metaclass that modifies an object during its creation or even subclassing an immutable type (e.g. ty=uple, float, strings)
+
+### Intro to Unicode:
+
+- Python is composed of Unicode characters (e.g `strings` only in Python 3)
+- By default python source code is treated as ASCII text, so if you're using unicode, you have explicityly tell python. You can do this changing the defailt source code encoding:
+
+```python
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# This script is using UTF-8 encoding
+```
+
+- Unknown files are treated as unicode charaters, a sequence of bytes, instead of charaters
+- For a list of unicodes and the corrresponding characters checkout [this](https://www.ssec.wisc.edu/~tomw/java/unicode.html) chart from the University of Wisconsin.
